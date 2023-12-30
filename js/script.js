@@ -26,3 +26,12 @@ const html = document.querySelector('html');
 togle.addEventListener('click', function() {
     togle.checked ? html.classList.add('dark') : html.classList.remove('dark');
 })
+
+//typed.js
+let typed = new Typed('#job',{
+    strings : ['Developer','Full Stack', 'Programmer'],
+    typeSpeed : 140,
+    delaySpeed : 90,
+    backSpeed: 60,
+    loop : true
+  });
