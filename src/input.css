@@ -24,8 +24,32 @@
     box-shodow: inset 0 -1px 0px rgba(0, 0, 0, 0.1);
 }
 
+.busnis {
+    height: 240px;
+    weight: 140px;
+}
+
+.board::before {
+    @apply absolute -z-10 rounded-xl;
+    content: '';
+    inset: 0;
+    background: linear-gradient(#00ccff, #d500f9);
+    height: 100px;
+    weight: 140%;
+    animation: rotate 4s linear infinite;
+}
+
 .nav-menu {
     @apply dark:bg-transparent dark:bg-opacity-90;
     backdrop-filter: blur(5px);
     box-shadow: inset 0 -3px 1px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg)
+    }
 }
